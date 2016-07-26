@@ -1,0 +1,19 @@
+DEFINES+=PROJECT_CONF_H=\"project-conf.h\"
+
+HAVE_BANKING=1
+UIP_CONF_IPV6=1
+UIP_CONF_RPL=1
+OFFSET_FIRMWARE=0
+
+#all: $(CONTIKI_PROJECT) 
+
+all: example
+PROJECT_SOURCEFILES += mqtt-sn.c
+
+#WITH_UIP6=1
+#UIP_CONF_IPV6=1
+#CFLAGS+= -DUIP_CONF_IPV6_RPL
+#CFLAGS += -DPROJECT_CONF_H=\"project-conf.h\"
+
+CONTIKI = ../../..
+include $(CONTIKI)/Makefile.include
