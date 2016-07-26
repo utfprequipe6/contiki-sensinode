@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?fileVersion 4.0.0?><cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage">
+	<storageModule moduleId="org.eclipse.cdt.core.settings">
+		<cconfiguration id="cdt.managedbuild.toolchain.sdcc.exe.release.179105115">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="cdt.managedbuild.toolchain.sdcc.exe.release.179105115" moduleId="org.eclipse.cdt.core.settings" name="Release">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.errorparsers.xlc.XlcErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.VCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.autotools.core.ErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.MakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactName="${ProjName}" buildProperties="" description="" id="cdt.managedbuild.toolchain.sdcc.exe.release.179105115" name="Release" parent="org.eclipse.cdt.build.core.emptycfg">
+					<folderInfo id="cdt.managedbuild.toolchain.sdcc.exe.release.179105115.199385294" name="/" resourcePath="">
+						<toolChain id="cdt.managedbuild.toolchain.sdcc.exe.release.912438468" name="SDCC Tool Chain" superClass="cdt.managedbuild.toolchain.sdcc.exe.release">
+							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="cdt.managedbuild.target.sdcc.platform.exe.release.2146530154" name="Release Platform" osList="solaris,linux,hpux,aix,qnx,win32" superClass="cdt.managedbuild.target.sdcc.platform.exe.release"/>
+							<builder buildPath="${workspace_loc:/contiki-sensinode/examples/cc2530dk/udp-ipv6}" id="cdt.managedbuild.target.sdcc.builder.exe.release.304579610" keepEnvironmentInBuildfile="false" managedBuildOn="false" name="Sdcc Make" superClass="cdt.managedbuild.target.sdcc.builder.exe.release">
+								<outputEntries>
+									<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="outputPath" name="examples/cc2530dk/border-router"/>
+								</outputEntries>
+							</builder>
+							<tool id="cdt.managedbuild.tool.sdcc.c.compiler.exe.release.701252984" name="SDCC Compiler" superClass="cdt.managedbuild.tool.sdcc.c.compiler.exe.release">
+								<option id="sdcc.c.compiler.option.include.paths.1122152258" name="Include paths (-I)" superClass="sdcc.c.compiler.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="/usr/local/sdcc/share/sdcc/include"/>
+								</option>
+								<option id="sdcc.c.compiler.option.preprocessor.def.symbols.314686997" name="Defined symbols (-D)" superClass="sdcc.c.compiler.option.preprocessor.def.symbols" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="TCNT1=1"/>
+									<listOptionValue builtIn="false" value="CHIPINFO1=1"/>
+									<listOptionValue builtIn="false" value="UIP_CONF_IPV6=1"/>
+									<listOptionValue builtIn="false" value="UIP_CONF_RPL=1"/>
+									<listOptionValue builtIn="false" value="HAVE_BANKING=1"/>
+								</option>
+								<inputType id="cdt.managedbuild.tool.sdcc.c.compiler.input.1912051117" superClass="cdt.managedbuild.tool.sdcc.c.compiler.input"/>
+							</tool>
+							<tool id="cdt.managedbuild.tool.sdcc.c.linker.exe.release.1162068525" name="SDCC Linker" superClass="cdt.managedbuild.tool.sdcc.c.linker.exe.release">
+								<inputType id="cdt.managedbuild.tool.sdcc.c.linker.input.1406744586" superClass="cdt.managedbuild.tool.sdcc.c.linker.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_RELS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+							</tool>
+							<tool id="cdt.managedbuild.tool.sdcc.assembler.exe.release.1793486275" name="SDCC Assembler" superClass="cdt.managedbuild.tool.sdcc.assembler.exe.release">
+								<inputType id="cdt.managedbuild.tool.sdcc.assembler.input.2061486915" superClass="cdt.managedbuild.tool.sdcc.assembler.input"/>
+							</tool>
+						</toolChain>
+					</folderInfo>
+					<sourceEntries>
+						<entry excluding="apps|regression-tests|cpu|tools|platform|examples" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="cpu/cc253x"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="examples/cc2530dk"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="platform/cc2530dk"/>
+					</sourceEntries>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+	</storageModule>
+	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+		<project id="contiki-sensinode.null.1169822247" name="contiki-sensinode"/>
+	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
+	<storageModule moduleId="refreshScope" versionNumber="2">
+		<configuration configurationName="Release">
+			<resource resourceType="PROJECT" workspacePath="/contiki-sensinode"/>
+		</configuration>
+	</storageModule>
+	<storageModule moduleId="scannerConfiguration">
+		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		<scannerConfigBuildInfo instanceId="cdt.managedbuild.toolchain.sdcc.exe.release.855492443;cdt.managedbuild.toolchain.sdcc.exe.release.855492443.244579764">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="net.sourceforge.eclipsesdcc.SDCCManagedMakePerProjectProfile"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="cdt.managedbuild.toolchain.sdcc.exe.release.179105115;cdt.managedbuild.toolchain.sdcc.exe.release.179105115.199385294">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="net.sourceforge.eclipsesdcc.SDCCManagedMakePerProjectProfile"/>
+		</scannerConfigBuildInfo>
+	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.internal.ui.text.commentOwnerProjectMappings"/>
+</cproject>
