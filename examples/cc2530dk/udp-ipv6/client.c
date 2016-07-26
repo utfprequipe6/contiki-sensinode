@@ -45,7 +45,7 @@
 static char buf[MAX_PAYLOAD_LEN];
 
 /* Our destinations and udp conns. One link-local and one global */
-#define LOCAL_CONN_PORT 3001
+#define LOCAL_CONN_PORT 3000
 static struct uip_udp_conn *l_conn;
 #if UIP_CONF_ROUTER
 #define GLOBAL_CONN_PORT 3002
@@ -105,10 +105,31 @@ timeout_handler(void)
   PRINTF(" Remote Port %u,", UIP_HTONS(this_conn->rport));
   PRINTF(" (msg=0x%04x), %u bytes\n", *(uint16_t *) buf, sizeof(seq_id));
 
-  uip_udp_packet_send(this_conn, buf, sizeof(seq_id));
+  sprintf(buf,"I can hear you (%d)!",seq_id);
+
+  uip_udp_packet_send(this_conn, buf, MAX_PAYLOAD_LEN);
   leds_off(LEDS_RED);
 }
 /*---------------------------------------------------------------------------*/
+
+static void
+print_local_addresses(void)
+{
+  int i;
+  uint8_t state;
+  PRINTF("Nodes's IPv6 addresses:\n");
+  for(i = 0; i < UIP_DS6_ADDR_NB; i++) {
+    state = uip_ds6_if.addr_list[i].state;
+    if(uip_ds6_if.addr_list[i].isused && (state == ADDR_TENTATIVE || state == ADDR_PREFERRED)) {
+      PRINTF("  \n");
+      PRINT6ADDR(&uip_ds6_if.addr_list[i].ipaddr);
+      if(state == ADDR_TENTATIVE) {
+        uip_ds6_if.addr_list[i].state = ADDR_PREFERRED;
+      }
+    }
+  }
+}
+
 PROCESS_THREAD(udp_client_process, ev, data)
 {
   static struct etimer et;
@@ -117,7 +138,7 @@ PROCESS_THREAD(udp_client_process, ev, data)
   PROCESS_BEGIN();
   PRINTF("UDP client process started\n");
 
-  uip_ip6addr(&ipaddr, 0xfe80, 0, 0, 0, 0x0215, 0x2000, 0x0002, 0x2145);
+  uip_ip6addr(&ipaddr, 0xfe80, 0, 0, 0, 0, 0, 0, 1);
   /* new connection with remote host */
   l_conn = udp_new(&ipaddr, UIP_HTONS(3000), NULL);
   if(!l_conn) {
@@ -130,12 +151,14 @@ PROCESS_THREAD(udp_client_process, ev, data)
   PRINTF(" local/remote port %u/%u\n",
          UIP_HTONS(l_conn->lport), UIP_HTONS(l_conn->rport));
 
-  uip_ip6addr(&ipaddr, 0xaaaa, 0, 0, 0, 0x0215, 0x2000, 0x0002, 0x2145);
+  uip_ip6addr(&ipaddr, 0xaaaa, 0, 0, 0, 0, 0, 0, 1);
   g_conn = udp_new(&ipaddr, UIP_HTONS(3000), NULL);
   if(!g_conn) {
     PRINTF("udp_new g_conn error.\n");
   }
   udp_bind(g_conn, UIP_HTONS(GLOBAL_CONN_PORT));
+
+  print_local_addresses();
 
   PRINTF("Global connection with ");
   PRINT6ADDR(&g_conn->ripaddr);

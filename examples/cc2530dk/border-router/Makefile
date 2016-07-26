@@ -1,5 +1,5 @@
 # To build for the cc2531 USB stick:
-DEFINES+=MODEL_CC2531=1,
+DEFINES+=MODEL_CC2531=0,
 
 DEFINES+=PROJECT_CONF_H=\"project-conf.h\"
 
@@ -7,6 +7,7 @@ DEFINES+=PROJECT_CONF_H=\"project-conf.h\"
 HAVE_BANKING=1
 UIP_CONF_IPV6=1
 UIP_CONF_RPL=1
+OFFSET_FIRMWARE=0
 
 PROJECT_SOURCEFILES += slip-bridge.c
 

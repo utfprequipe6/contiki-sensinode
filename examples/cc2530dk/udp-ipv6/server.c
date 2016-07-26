@@ -53,7 +53,7 @@ static uint16_t len;
 #define SERVER_REPLY          1
 
 /* Should we act as RPL root? */
-#define SERVER_RPL_ROOT       1
+#define SERVER_RPL_ROOT       0
 
 #if SERVER_RPL_ROOT
 static uip_ipaddr_t ipaddr;
@@ -72,12 +72,18 @@ tcpip_handler(void)
     memcpy(buf, uip_appdata, len);
     PRINTF("%u bytes from [", len);
     PRINT6ADDR(&UIP_IP_BUF->srcipaddr);
-    PRINTF("]:%u\n", UIP_HTONS(UIP_UDP_BUF->srcport));
+    PRINTF("]:%u", UIP_HTONS(UIP_UDP_BUF->srcport));
+    PRINTF("-> %s\n", buf);
 #if SERVER_REPLY
     uip_ipaddr_copy(&server_conn->ripaddr, &UIP_IP_BUF->srcipaddr);
-    server_conn->rport = UIP_UDP_BUF->srcport;
-
+    server_conn->rport = UIP_UDP_BUF->destport;
     uip_udp_packet_send(server_conn, buf, len);
+
+    PRINTF("Sending echo reply to ");
+    PRINT6ADDR(&server_conn->ripaddr);
+    PRINTF(" port %u", UIP_HTONS(server_conn->rport));
+    PRINTF("-> %s\n", buf);
+
     /* Restore server connection to allow data from any node */
     uip_create_unspecified(&server_conn->ripaddr);
     server_conn->rport = 0;
@@ -147,6 +153,8 @@ create_dag()
 PROCESS_THREAD(udp_server_process, ev, data)
 {
 
+  uip_ipaddr_t nodeaddress;
+
   PROCESS_BEGIN();
   putstring("Starting UDP server\n");
 
@@ -158,8 +166,16 @@ PROCESS_THREAD(udp_server_process, ev, data)
   create_dag();
 #endif
 
+  //uip_gethostaddr(&nodeaddress);
+  //PRINTF("Node IP Address: ");
+  //PRINT6ADDR(&uip_hostaddr);
+
+
+
   server_conn = udp_new(NULL, UIP_HTONS(0), NULL);
   udp_bind(server_conn, UIP_HTONS(3000));
+
+  print_local_addresses();
 
   PRINTF("Listen port: 3000, TTL=%u\n", server_conn->ttl);
 
