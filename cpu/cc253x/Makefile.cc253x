@@ -217,4 +217,7 @@ else
 
 %.hex: %.ihx
 	$(PACKIHX) $< > $@
+	
+	@echo "\nGenerate Bin File"
+	srec_cat $@ -intel -o $(@:.hex=.bin) -binary
 endif
