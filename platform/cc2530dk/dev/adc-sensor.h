@@ -50,12 +50,53 @@
 /* ADC Sensor Types */
 #define ADC_SENSOR "ADC"
 
-#define ADC_SENSOR_TYPE_TEMP    0
-#define ADC_SENSOR_TYPE_VDD     4
+#define ADC_SENSOR_TYPE_AIN0    0
+#define ADC_SENSOR_TYPE_AIN1    1
+#define ADC_SENSOR_TYPE_AIN2    2
+#define ADC_SENSOR_TYPE_AIN3    3
+#define ADC_SENSOR_TYPE_AIN4    4
+#define ADC_SENSOR_TYPE_AIN5    5
+#define ADC_SENSOR_TYPE_AIN6    6
+#define ADC_SENSOR_TYPE_AIN7    7
+#define ADC_SENSOR_TYPE_TEMP    14
+#define ADC_SENSOR_TYPE_VDD     15
 
 #ifdef ADC_SENSOR_CONF_ON
 #define ADC_SENSOR_ON ADC_SENSOR_CONF_ON
 #endif /* ADC_SENSOR_CONF_ON */
+
+#ifdef ADC_AIN0_CONF_ON
+#define ADC_AIN0_ON ADC_AIN0_CONF_ON
+#endif
+
+#ifdef ADC_AIN1_CONF_ON
+#define ADC_AIN1_ON ADC_AIN1_CONF_ON
+#endif
+
+#ifdef ADC_AIN2_CONF_ON
+#define ADC_AIN2_ON ADC_AIN2_CONF_ON
+#endif
+
+#ifdef ADC_AIN3_CONF_ON
+#define ADC_AIN3_ON ADC_AIN3_CONF_ON
+#endif
+
+#ifdef ADC_AIN4_CONF_ON
+#define ADC_AIN4_ON ADC_AIN4_CONF_ON
+#endif
+
+#ifdef ADC_AIN5_CONF_ON
+#define ADC_AIN5_ON ADC_AIN5_CONF_ON
+#endif
+
+#ifdef ADC_AIN6_CONF_ON
+#define ADC_AIN6_ON ADC_AIN6_CONF_ON
+#endif
+
+#ifdef ADC_AIN7_CONF_ON
+#define ADC_AIN7_ON ADC_AIN7_CONF_ON
+#endif
+
 
 #if ADC_SENSOR_ON
 extern const struct sensors_sensor adc_sensor;

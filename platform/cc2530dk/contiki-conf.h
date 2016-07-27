@@ -133,6 +133,15 @@
 #define VDD_SENSOR_CONF_ON      1  /* Supply Voltage */
 #define BATTERY_SENSOR_CONF_ON  0  /* Battery */
 
+#define ADC_AIN0_CONF_ON 0
+#define ADC_AIN1_CONF_ON 0
+#define ADC_AIN2_CONF_ON 0
+#define ADC_AIN3_CONF_ON 0
+#define ADC_AIN4_CONF_ON 0
+#define ADC_AIN5_CONF_ON 0
+#define ADC_AIN6_CONF_ON 1
+#define ADC_AIN7_CONF_ON 0
+
 /* Low Power Modes - We only support PM0/Idle and PM1 */
 #ifndef LPM_CONF_MODE
 #define LPM_CONF_MODE         0 /* 0: no LPM, 1: MCU IDLE, 2: Drop to PM1 */

@@ -172,13 +172,23 @@ PROCESS_THREAD(sensors_test_process, ev, data)
        */
       rv = sensor->value(ADC_SENSOR_TYPE_VDD);
       if(rv != -1) {
-        sane = rv * 3.75 / 2047;
+        //sane = rv * 3.75 / 2047;
+    	sane = ((3*(1.0512))*rv)/(2047-rv*0.12);
         dec = sane;
         frac = sane - dec;
+
+
+
         PRINTF("Supply=%d.%02u V (%d)\n", dec, (unsigned int)(frac*100), rv);
         /* Store rv temporarily in dec so we can use it for the battery */
         dec = rv;
       }
+
+      rv = sensor->value(ADC_SENSOR_TYPE_AIN6);
+      if(rv != -1) {
+    	  PRINTF("AIN6 Reading=%d\n", rv);
+      }
+
       /*
        * Battery Voltage - ToDo
        *   rv = sensor->value(ADC_SENSOR_TYPE_BATTERY);
