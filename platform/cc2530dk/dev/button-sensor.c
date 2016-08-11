@@ -35,8 +35,10 @@
 #include "dev/port.h"
 #include "dev/button-sensor.h"
 #include "dev/watchdog.h"
+#include "port2.h"
 /*---------------------------------------------------------------------------*/
 static CC_AT_DATA struct timer debouncetimer;
+struct cc253x_p2_handler port2_bi;
 /*---------------------------------------------------------------------------*/
 /* Button 1 - SmartRF and cc2531 USB Dongle */
 /*---------------------------------------------------------------------------*/
@@ -66,9 +68,19 @@ configure_b1(int type, int value)
 #if !MODEL_CC2531
     P0INP |= 2; /* Tri-state */
 #endif
+#if BUTTON_SENSOR_ON
     BUTTON_IRQ_ON_PRESS(1);
     BUTTON_FUNC_GPIO(1);
     BUTTON_DIR_INPUT(1);
+    BUTTON_TRISTATE(1);
+    if(BUTTON1_PORT==2)
+    {
+    	P2IFG = 0;
+    	P2IF = 0;
+    	port2_bi.cb = port2_button_irq;
+    	cc253x_p2_register_handler(&port2_bi);
+    }
+#endif
     return 1;
   case SENSORS_ACTIVE:
     if(value) {
@@ -190,6 +202,27 @@ port_0_isr(void) __interrupt(P0INT_VECTOR)
 
   ENERGEST_OFF(ENERGEST_TYPE_IRQ);
   EA = 1;
+}
+
+uint8_t port2_button_irq(void)
+{
+  EA = 0;
+  ENERGEST_ON(ENERGEST_TYPE_IRQ);
+
+  /* This ISR is for the entire port. Check if the interrupt was caused by our
+   * button's pin. */
+  if(BUTTON_IRQ_CHECK(1)) {
+    if(timer_expired(&debouncetimer)) {
+      timer_set(&debouncetimer, CLOCK_SECOND / 8);
+      sensors_changed(&button_sensor);
+    }
+  }
+
+  BUTTON_IRQ_FLAG_OFF(1);
+
+  ENERGEST_OFF(ENERGEST_TYPE_IRQ);
+  EA = 1;
+  return 1;
 }
 #endif
 #pragma restore

@@ -47,7 +47,6 @@ PROCESS_THREAD(blink_process, ev, data)
   PROCESS_BEGIN();
 
   blinks = 0;
-
   while(1) {
     etimer_set(&et_blink, CLOCK_SECOND);
 

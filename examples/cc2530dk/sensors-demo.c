@@ -130,7 +130,6 @@ PROCESS_THREAD(sensors_test_process, ev, data)
   while(1) {
 
     PROCESS_WAIT_EVENT_UNTIL(etimer_expired(&et));
-
     /*
      * Request some ADC conversions
      * Return value -1 means sensor not available or turned off in conf

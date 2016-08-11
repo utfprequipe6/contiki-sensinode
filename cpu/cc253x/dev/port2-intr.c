@@ -47,7 +47,6 @@ port_2_isr(void) __interrupt(P2INT_VECTOR)
   for(h = handlers; h != NULL; h = h->next) {
     handled |= h->cb();
   }
-
   if(handled) {
     P2IF = 0;
   }
