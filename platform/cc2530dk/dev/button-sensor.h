@@ -86,6 +86,7 @@ void port_1_isr(void) __interrupt(P1INT_VECTOR);
 /* SmartRF */
 /* Button 1: P0_1 - Port 0 ISR needed */
 void port_0_isr(void) __interrupt(P0INT_VECTOR);
+uint8_t port2_button_irq(void);
 #define   BUTTON_SENSOR_ACTIVATE() button_sensor.configure(SENSORS_ACTIVE, 1)
 #endif /* MODEL_CC2531 */
 
@@ -95,6 +96,7 @@ void port_0_isr(void) __interrupt(P0INT_VECTOR);
 
 /* Define macros for buttons */
 #define BUTTON_READ(b)           PORT_READ(BUTTON##b##_PORT, BUTTON##b##_PIN)
+#define BUTTON_TRISTATE(b)		 PORT_TRISTATE_MODE(BUTTON##b##_PORT, BUTTON##b##_PIN)
 #define BUTTON_FUNC_GPIO(b)      PORT_FUNC_GPIO(BUTTON##b##_PORT, BUTTON##b##_PIN)
 #define BUTTON_DIR_INPUT(b)      PORT_DIR_INPUT(BUTTON##b##_PORT, BUTTON##b##_PIN)
 #define BUTTON_IRQ_ENABLED(b)    PORT_IRQ_ENABLED(BUTTON##b##_PORT, BUTTON##b##_PIN)

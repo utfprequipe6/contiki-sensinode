@@ -36,7 +36,7 @@ struct cc253x_p2_handler *handlers = NULL;
 void
 cc253x_p2_register_handler(struct cc253x_p2_handler *h)
 {
-  uint8_t flags;
+  uint8_t flags = 0x02;
 
   if(!h) {
     return;
@@ -53,7 +53,7 @@ cc253x_p2_register_handler(struct cc253x_p2_handler *h)
 void
 cc253x_p2_unregister_handler(struct cc253x_p2_handler *remove)
 {
-  uint8_t flags;
+  uint8_t flags = 0x02;
   struct cc253x_p2_handler *h = handlers;
 
   // Protect against dumb users

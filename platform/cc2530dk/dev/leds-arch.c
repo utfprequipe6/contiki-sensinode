@@ -55,6 +55,7 @@ leds_arch_init(void)
 
   P1DIR |= (LED1_MASK | LED2_MASK | LED4_MASK);
   P0DIR |= (LED3_MASK);
+  P0INP |= (LED3_MASK);
 #endif
 }
 /*---------------------------------------------------------------------------*/

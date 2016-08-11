@@ -154,6 +154,7 @@ main(void) CC_NON_BANKED
   leds_init();
   leds_off(LEDS_ALL);
   fade(LEDS_GREEN);
+  fade(LEDS_BLUE);
 
   /* initialize process manager. */
   process_init();
@@ -171,6 +172,7 @@ main(void) CC_NON_BANKED
   serial_line_init();
 #endif
   fade(LEDS_RED);
+  fade(LEDS_BLUE);
 
   PUTSTRING("##########################################\n");
   putstring(CONTIKI_VERSION_STRING "\n");
@@ -223,12 +225,9 @@ main(void) CC_NON_BANKED
 
   PUTSTRING("##########################################\n");
 #endif
-
   watchdog_init();
-
   /* Initialise the H/W RNG engine. */
   random_init(0);
-
   /* start services */
   process_start(&etimer_process, NULL);
   ctimer_init();
@@ -236,10 +235,10 @@ main(void) CC_NON_BANKED
   /* initialize the netstack */
   netstack_init();
   set_rime_addr();
-
 #if BUTTON_SENSOR_ON || ADC_SENSOR_ON
   process_start(&sensors_process, NULL);
   BUTTON_SENSOR_ACTIVATE();
+
   ADC_SENSOR_ACTIVATE();
 #endif
 
@@ -259,8 +258,8 @@ main(void) CC_NON_BANKED
   autostart_start(autostart_processes);
 
   watchdog_start();
-
   fade(LEDS_YELLOW);
+  fade(LEDS_BLUE);
 
   while(1) {
     uint8_t r;

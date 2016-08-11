@@ -107,6 +107,7 @@
  * A single ISR handles all of the above. Leave this as is if you are not
  * interested in any of the above. Define as 1 (e.g. in project-conf.h) if
  * at least one of those interrupt sources will need handled */
+#define PORT_2_ISR_ENABLED 1
 #ifndef PORT_2_ISR_ENABLED
 #define PORT_2_ISR_ENABLED 0
 #endif
@@ -116,9 +117,13 @@
  * It is harmless to #define XYZ 1
  * even if the sensor is not present on our device
  */
+
+#define BUTTON_SENSOR_CONF_ON   1
+
 #ifndef BUTTON_SENSOR_CONF_ON
 #define BUTTON_SENSOR_CONF_ON   1  /* Buttons */
 #endif
+
 
 /* B2 on the cc2531 USB stick can be a reset button or a general-purpose one */
 #ifndef CC2531_CONF_B2_REBOOTS

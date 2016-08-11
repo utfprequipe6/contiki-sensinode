@@ -52,6 +52,7 @@
 #define PORT_CLEAR(port,pin)         PORT_CLEAR_X(port,pin) PORT_CLEAR_X(port,pin)
 #define PORT_TOGGLE(port,pin)        PORT_TOGGLE_X(port,pin) PORT_TOGGLE_X(port,pin)
 #define PORT_READ(port,pin)          PORT_READ_X(port,pin)
+#define PORT_TRISTATE_MODE(port,pin) PORT_TRISTATE_MODE_X(port,pin)
 #define PORT_WRITE(port,pin,v)       PORT_WRITE_X(port,pin,v)
 #define PORT_DIR_OUTPUT(port,pin)    PORT_DIR_OUTPUT_X(port,pin)
 #define PORT_DIR_INPUT(port,pin)     PORT_DIR_INPUT_X(port,pin)
@@ -66,6 +67,7 @@
 /* Second Round of Macro Substitutions. Normally, you can stop reading here */
 /*---------------------------------------------------------------------------*/
 #define PORT_FUNC_GPIO_X(port,pin)     do { P##port##SEL &= ~(1 << pin); } while(0)
+#define PORT_TRISTATE_MODE_X(port,pin)     do { P##port##INP |= (1 << pin); } while(0)
 #define PORT_FUNC_PER_X(port,pin)      do { P##port##SEL |= 1 << pin; } while(0)
 #define PORT0_ANALOG_IO_X(port,pin)    do { APCFG |= 1 << pin; } while(0)
 #define PORT0_DIGITAL_IO_X(port,pin)   do { APCFG &= ~(1 << pin); } while(0)
