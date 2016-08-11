@@ -50,8 +50,11 @@ leds_arch_init(void)
   P0SEL &= ~LED2_MASK;
   P0DIR |= LED2_MASK;
 #else
-  P1SEL &= ~(LED1_MASK | LED2_MASK | LED3_MASK);
-  P1DIR |= (LED1_MASK | LED2_MASK | LED3_MASK);
+  P1SEL &= ~(LED1_MASK | LED2_MASK | LED4_MASK);
+  P0SEL &= ~(LED3_MASK);
+
+  P1DIR |= (LED1_MASK | LED2_MASK | LED4_MASK);
+  P0DIR |= (LED3_MASK);
 #endif
 }
 /*---------------------------------------------------------------------------*/
@@ -61,7 +64,7 @@ leds_arch_get(void)
 #if MODEL_CC2531
   return (unsigned char)(LED1_PIN | ((LED2_PIN ^ 0x01) << 1));
 #else
-  return (unsigned char)(LED1_PIN | (LED2_PIN << 1) | (LED3_PIN << 2));
+  return (unsigned char)(LED1_PIN | (LED2_PIN << 1) | (LED3_PIN << 2) | (LED4_PIN << 3));
 #endif
 }
 /*---------------------------------------------------------------------------*/
@@ -74,6 +77,7 @@ leds_arch_set(unsigned char leds)
 #else
   LED2_PIN = (leds & 0x02) >> 1;
   LED3_PIN = (leds & 0x04) >> 2;
+  LED4_PIN = (leds & 0x08) >> 3;
 #endif
 }
 /*---------------------------------------------------------------------------*/

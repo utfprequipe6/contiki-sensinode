@@ -41,6 +41,8 @@
  *         George Oikonomou - <oikonomou@users.sourceforge.net>
  */
 
+//Alterado por Guilherme Luiz Moritz para refletir os leds do kit de desenvolvimento da disciplina de rede de sensores sem fio
+
 #ifndef __MODELS_H__
 #define __MODELS_H__
 
@@ -51,14 +53,15 @@
 #undef LEDS_GREEN
 #undef LEDS_YELLOW
 #undef LEDS_RED
-#define LEDS_YELLOW 4
+#undef LEDS_BLUE
+//#define LEDS_YELLOW 4
 
 /*
- * Smart RF LEDs
+ * LEDs do kit da disciplina
  *  1: P1_0 (Green)
  *  2: P1_1 (Red)
- *  3: P1_4 (Yellow)
- *  4: P0_1 (LED4 shares port/pin with B1 and is currently unused)
+ *  3: P0_1 (Blue)
+ *  4: P1_4 (Yellow)
  *
  * USB Dongle LEDs
  *  1: P0_0 (Red)
@@ -94,20 +97,25 @@
 #define LED2_MASK  0x01
 #define LED1_MASK  0x02
 #else
-#define MODEL_STRING "TI SmartRF05 EB\n"
+#define MODEL_STRING "PPGSESAI11 - TI SmartRF05 EB based\n"
+
+#define LEDS_CONF_ALL 15
 #define LEDS_GREEN    1
 #define LEDS_RED      2
+#define LEDS_BLUE     4
+#define LEDS_YELLOW   8
 
 /* H/W Connections */
-#define LED1_PIN   P1_0
+#define LED4_PIN   P1_4
+#define LED3_PIN   P0_1
 #define LED2_PIN   P1_1
-#define LED3_PIN   P1_4
+#define LED1_PIN   P1_0
 
 /* P0DIR and P0SEL masks */
-#define LED1_MASK  0x01
+#define LED4_MASK  0x10
+#define LED3_MASK  0x02
 #define LED2_MASK  0x02
-#define LED3_MASK  0x10
-#define LED4_MASK  0x02
+#define LED1_MASK  0x01
 #endif
 /*---------------------------------------------------------------------------*/
 /* Buttons */
