@@ -154,7 +154,7 @@ main(void) CC_NON_BANKED
   leds_init();
   leds_off(LEDS_ALL);
   fade(LEDS_GREEN);
-  fade(LEDS_BLUE);
+
 
   /* initialize process manager. */
   process_init();
@@ -172,7 +172,7 @@ main(void) CC_NON_BANKED
   serial_line_init();
 #endif
   fade(LEDS_RED);
-  fade(LEDS_BLUE);
+
 
   PUTSTRING("##########################################\n");
   putstring(CONTIKI_VERSION_STRING "\n");
@@ -258,7 +258,6 @@ main(void) CC_NON_BANKED
   autostart_start(autostart_processes);
 
   watchdog_start();
-  fade(LEDS_YELLOW);
   fade(LEDS_BLUE);
 
   while(1) {
@@ -351,5 +350,6 @@ main(void) CC_NON_BANKED
 #endif /* LPM_MODE==LPM_MODE_PM2 */
 #endif /* LPM_MODE */
   }
+  fade(LEDS_YELLOW);
 }
 /*---------------------------------------------------------------------------*/

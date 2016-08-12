@@ -32,7 +32,7 @@ PROCESS_THREAD(hello_world_process, ev, data)
     PROCESS_WAIT_EVENT();
 
     if(ev == PROCESS_EVENT_TIMER) {
-      printf("Sensor says #%u\n", count);
+      printf("Hello world #%u!\n", count);
       count++;
 
       etimer_reset(&et_hello);
