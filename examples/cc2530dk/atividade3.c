@@ -5,6 +5,7 @@
  * It is largely based on hello_world in $(CONTIKI)/examples/sensinode
  *
  * Author: George Oikonomou - <oikonomou@users.sourceforge.net>
+ * Aletrado para a disciplina de Rede de Sensores Sem Fio
  */
 
 #include "contiki.h"
@@ -61,7 +62,7 @@ PROCESS_THREAD(blink_process, ev, data)
     leds_off(LEDS_ALL);
     leds_on(blinks & LEDS_ALL);
     blinks++;
-    printf("Blink... (state %0.2X)\n", leds_get());
+    printf("Blink... (state %X)\n", leds_get());
   }
 
   PROCESS_END();
