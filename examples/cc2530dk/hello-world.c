@@ -16,7 +16,7 @@ PROCESS_THREAD(hello_world_process, ev, data)
 
   PROCESS_BEGIN();
 
-  printf("Hello World!\n");
+  printf("Hello World - Ohara!\n");
 
   PROCESS_END();
 }
