@@ -50,10 +50,12 @@ static char buf[MAX_PAYLOAD_LEN];
 /* Our destinations and udp conns. One link-local and one global */
 #define LOCAL_CONN_PORT 8802
 static struct uip_udp_conn *l_conn;
-#if UIP_CONF_ROUTER
+
+//#if UIP_CONF_ROUTER
 #define GLOBAL_CONN_PORT 8802
 static struct uip_udp_conn *g_conn;
-#endif
+//#endif
+
 #define LED_TOGGLE_REQUEST (0x79)
 #define LED_SET_STATE (0x7A)
 #define LED_GET_STATE (0x7B)
@@ -71,21 +73,37 @@ AUTOSTART_PROCESSES(&udp_client_process);
 static void tcpip_handler ( void )
 {
 	char i=0;
-	#define SEND_ECHO (0xBA)
+#define SEND_ECHO (0xBA)
 	if( uip_newdata ()) // verifica se novos dados foram recebidos
 	{
 		char * dados = (( char *) uip_appdata ); // este buffer eh pardao do contiki
-		PRINTF(" Recebidos %d bytes \n" , uip_datalen ());
-		switch (dados [0])
+		//PRINTF(" Recebidos %d bytes \n" , uip_datalen ());
+		switch (dados[0])
 		{
-		case SEND_ECHO :
+		/*case SEND_ECHO :
 		{
 			uip_ipaddr_copy (& g_conn -> ripaddr , & UIP_IP_BUF -> srcipaddr );
 			g_conn -> rport = UIP_UDP_BUF -> destport ;
 			uip_udp_packet_send (g_conn , dados , uip_datalen ());
+
 			PRINTF(" Enviando eco para [");
 			PRINT6ADDR (& g_conn -> ripaddr );
 			PRINTF("]:% u\n", UIP_HTONS (g_conn -> rport ));
+			break ;
+		}*/
+		case LED_SET_STATE :
+		{
+			leds_off(LEDS_ALL);
+			leds_on(dados[1]);
+
+			PRINTF(" \nRecebendo LED_SET_STATE de [");
+			PRINT6ADDR (& g_conn -> ripaddr );
+			PRINTF("]:% u", UIP_HTONS (g_conn -> rport ));
+			buf[0]= LED_STATE;
+			buf[1]= leds_get();
+
+			uip_udp_packet_send( g_conn , buf, 2);//enviando stado dos leds para o servidor
+
 			break ;
 		}
 		default :
@@ -109,12 +127,20 @@ timeout_handler(void)
 {  
   memset(buf, 0, MAX_PAYLOAD_LEN); //zera o buffer global
 
-  PRINTF("Cliente para [");
+ // memcpy(buf, LED_TOGGLE_REQUEST,1);
+  buf[0] = LED_TOGGLE_REQUEST;
+  //uip_udp_packet_send(g_conn, buf, MAX_PAYLOAD_LEN);
+  if ( uip_ds6_get_global( ADDR_PREFERRED) == NULL)
+  {
+	  PRINTF ("O No ainda nao tem um IP global valido \n");
+  }
+  else
+  {
+	  uip_udp_packet_send( g_conn , buf , 1);
+  }
+  PRINTF("\nCliente para [");
   PRINT6ADDR(&g_conn->ripaddr);
   PRINTF("]:%u,", UIP_HTONS(g_conn->rport));
-
-  uip_udp_packet_send(g_conn, buf, MAX_PAYLOAD_LEN);
-  
 }
 /*---------------------------------------------------------------------------*/
 
@@ -144,7 +170,7 @@ PROCESS_THREAD(udp_client_process, ev, data)
   PROCESS_BEGIN();
   PRINTF("UDP client process started\n");
 
-  uip_ip6addr(&ipaddr, 0xfe80, 0, 0, 0, 0x0212, 0x4b00, 0x07b9, 0x5e8d);
+  uip_ip6addr(&ipaddr, 0xfe80, 0, 0, 0, 0x0212, 0x4b00, 0x07c3, 0xb5e4);
   /* new connection with remote host */
   l_conn = udp_new(&ipaddr, UIP_HTONS(LOCAL_CONN_PORT), NULL);
   if(!l_conn) {
@@ -157,7 +183,7 @@ PROCESS_THREAD(udp_client_process, ev, data)
   PRINTF(" local/remote port %u/%u\n",
          UIP_HTONS(l_conn->lport), UIP_HTONS(l_conn->rport));
 
-  uip_ip6addr(&ipaddr, 0xaaaa, 0, 0, 0, 0x0212, 0x4b00, 0x07b9, 0x5e8d);
+  uip_ip6addr(&ipaddr, 0xaaaa, 0, 0, 0, 0x0212, 0x4b00, 0x07c3, 0xb5e4);
   g_conn = udp_new(&ipaddr, UIP_HTONS(GLOBAL_CONN_PORT), NULL);
   if(!g_conn) {
     PRINTF("udp_new g_conn error.\n");
