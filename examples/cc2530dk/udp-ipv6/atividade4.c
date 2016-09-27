@@ -73,11 +73,12 @@ AUTOSTART_PROCESSES(&udp_client_process);
 static void tcpip_handler ( void )
 {
 	char i=0;
-#define SEND_ECHO (0xBA)
+
 	if( uip_newdata ()) // verifica se novos dados foram recebidos
 	{
 		char * dados = (( char *) uip_appdata ); // este buffer eh pardao do contiki
-		//PRINTF(" Recebidos %d bytes \n" , uip_datalen ());
+		PRINTF("Dados Recebidos: %s\n" , dados);
+
 		switch (dados[0])
 		{
 		/*case SEND_ECHO :
@@ -183,7 +184,8 @@ PROCESS_THREAD(udp_client_process, ev, data)
   PRINTF(" local/remote port %u/%u\n",
          UIP_HTONS(l_conn->lport), UIP_HTONS(l_conn->rport));
 
-  uip_ip6addr(&ipaddr, 0xaaaa, 0, 0, 0, 0x0212, 0x4b00, 0x07c3, 0xb5e4);
+  uip_ip6addr(&ipaddr, 0xaaaa, 0, 0, 0, 0x0212, 0x4b00, 0x07B9, 0x5ECC);
+
   g_conn = udp_new(&ipaddr, UIP_HTONS(GLOBAL_CONN_PORT), NULL);
   if(!g_conn) {
     PRINTF("udp_new g_conn error.\n");
