@@ -1,0 +1,50 @@
+
+3. Imprima no terminal o IPv6 do nó programado;
+
+aaaa::0212:4b00:07c3:b5bb Global connection with aaaa::0212:4b00:07c3:b5e4 local/remote port 8802/8802
+ping6 running.
+
+4. Envie um comando de ping para o IP do Linux que está executando o software do router; Observe o tempo de retorno;
+ser@instant-contiki:~$ ping6 bbbb::100
+PING bbbb::100(bbbb::100) 56 data bytes
+64 bytes from bbbb::100: icmp_seq=1 ttl=64 time=6.34 ms
+64 bytes from bbbb::100: icmp_seq=2 ttl=64 time=0.345 ms
+64 bytes from bbbb::100: icmp_seq=3 ttl=64 time=0.316 ms
+64 bytes from bbbb::100: icmp_seq=4 ttl=64 time=0.394 ms
+64 bytes from bbbb::100: icmp_seq=5 ttl=64 time=0.334 ms
+64 bytes from bbbb::100: icmp_seq=6 ttl=64 time=0.552 ms
+64 bytes from bbbb::100: icmp_seq=7 ttl=64 time=0.433 ms
+64 bytes from bbbb::100: icmp_seq=8 ttl=64 time=0.487 ms
+64 bytes from bbbb::100: icmp_seq=9 ttl=64 time=8.90 ms
+64 bytes from bbbb::100: icmp_seq=10 ttl=64 time=0.421 ms
+ 
+--- bbbb::100 ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9048ms
+rtt min/avg/max/mdev = 0.316/1.852/8.902/2.942 ms
+
+a média é de 1.8ms
+
+5. Verifique a tabela de roteamento com o comando ip -6 route show
+
+user@instant-contiki:~$ ip -6 route show
+bbbb::/64 dev eth0  proto kernel  metric 256  expires 86399sec
+fe80::/64 dev eth0  proto kernel  metric 256 
+
+6. Envie um comando de ping para o IP do border router; Observe o tempo de retorno e o TTL; O comando foi bem sucedido? Porque?
+
+
+
+
+7. Envie um comando de ping para o IP do Gateway (bbbb::100); Observe o tempo de
+retorno e o TTL; O comando foi bem sucedido? Porque?
+8. Adicione uma rota para a sub-rede aaaa:: para o Gateway da Rede de Sensores com o
+comando sudo route -A inet6 add aaaa::/64 gw bbbb::100
+9. Envie um comando de ping para o IP do border router; Observe o tempo de retorno e
+o TTL; O comando foi bem sucedido? Porque?
+10. Envie um comando de ping para o IP do n ´
+o do seu kit; Observe o tempo de retorno e
+o TTL;
+11. Escreva um script que envie pacote UDP para alterar o estado dos leds do kit ap ´
+os
+receber um pacote UDP de 1 byte contendo a macro LED_TOGGLE_REQUEST. Recomenda-
+se o uso de Python. Um exemplo de envio de pacote UDP segue:
