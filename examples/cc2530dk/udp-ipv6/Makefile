@@ -7,7 +7,7 @@ OFFSET_FIRMWARE=1
 
 PROJECT_SOURCEFILES += ping6.c
 
-CONTIKI_PROJECT = client server atividade4
+CONTIKI_PROJECT = client server  atividade6b
 
 all: $(CONTIKI_PROJECT) 
 

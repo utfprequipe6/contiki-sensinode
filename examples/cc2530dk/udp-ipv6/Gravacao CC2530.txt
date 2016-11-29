@@ -1,0 +1,951 @@
+
+Pacote UDP enviado: [LED_TOGGLE_REQUEST] de: 
+aaaa::0212:4b00:07c3:b5bb 
+para: aaaa::0212:4b00:07b9:5ecc Porta: 8802 
+
+Pacote UDP enviado: [LED_TOGGLE_REQUEST] de: 
+aaaa::0212:4b00:07c3:b5bb 
+para: aaaa::0212:4b00:07b9:5ecc Porta: 8802 
+
+
+Dados Recebidos: zˇù
+comando inicial: 122
+
+RSSi: -80  LQI: 108 
+ 
+Recebendo LED_SET_STATE de [aaaa::0212:4b00:07b9:5ecc]: 8802
+Pacote UDP enviado... de: 
+aaaa::0212:4b00:07c3:b5bb 
+para: aaaa::0212:4b00:07b9:5ecc Porta: 8802 
+
+Servidor: [Potencia: 85 ;  RSSi: -99 ; LQI: 92 ] 
+
+Pacote UDP enviado: [LED_TOGGLE_REQUEST] de: 
+aaaa::0212:4b00:07c3:b5bb 
+para: aaaa::0212:4b00:07b9:5ecc Porta: 8802 
+
+Pacote UDP enviado: [LED_TOGGLE_REQUEST] de: 
+aaaa::0212:4b00:07c3:b5bb 
+para: aaaa::0212:4b00:07b9:5ecc Porta: 8802 
+
+Pacote UDP enviado: [LED_TOGGLE_REQUEST] de: 
+aaaa::0212:4b00:07c3:b5bb 
+para: aaaa::0212:4b00:07b9:5ecc Porta: 8802 
+
+
+Dados Recebidos: zˇù
+comando inicial: 122
+
+RSSi: -74  LQI: 108 
+ 
+Recebendo LED_SET_STATE de [aaaa::0212:4b00:07b9:5ecc]: 8802
+Pacote UDP enviado... de: 
+aaaa::0212:4b00:07c3:b5bb 
+para: aaaa::0212:4b00:07b9:5ecc Porta: 8802 
+
+Servidor: [Potencia: 55 ;  RSSi: -99 ; LQI: 61 ] 
+
+Pacote UDP enviado: [LED_TOGGLE_REQUEST] de: 
+aaaa::0212:4b00:07c3:b5bb 
+para: aaaa::0212:4b00:07b9:5ecc Porta: 8802 
+
+Pacote UDP enviado: [LED_TOGGLE_REQUEST] de: 
+aaaa::0212:4b00:07c3:b5bb 
+para: aaaa::0212:4b00:07b9:5ecc Porta: 8802 
+
+Pacote UDP enviado: [LED_TOGGLE_REQUEST] de: 
+aaaa::0212:4b00:07c3:b5bb 
+para: aaaa::0212:4b00:07b9:5ecc Porta: 8802 
+
+Pacote UDP enviado: [LED_TOGGLE_REQUEST] de: 
+aaaa::0212:4b00:07c3:b5bb 
+para: aaaa::0212:4b00:07b9:5ecc Porta: 8802 
+
+Pacote UDP enviado: [LED_TOGGLE_REQUEST] de: 
+aaaa::0212:4b00:07c3:b5bb 
+para: aaaa::0212:4b00:07b9:5ecc Porta: 8802 
+
+Pacote UDP enviado: [LED_TOGGLE_REQUEST] de: 
+aaaa::0212:4b00:07c3:b5bb 
+para: aaaa::0212:4b00:07b9:5ecc Porta: 8802 
+
+Pacote UDP enviado: [LED_TOGGLE_REQUEST] de: 
+aaaa::0212:4b00:07c3:b5bb 
+para: aaaa::0212:4b00:07b9:5ecc Porta: 8802 
+
+Pacote UDP enviado: [LED_TOGGLE_REQUEST] de: 
+aaaa::0212:4b00:07c3:b5bb 
+para: aaaa::0212:4b00:07b9:5ecc Porta: 8802 
+
+
+Dados Recebidos: zˇù
+comando inicial: 122
+
+RSSi: -75  LQI: 108 
+ 
+Recebendo LED_SET_STATE de [aaaa::0212:4b00:07b9:5ecc]: 8802
+Pacote UDP enviado... de: 
+aaaa::0212:4b00:07c3:b5bb 
+para: aaaa::0212:4b00:07b9:5ecc Porta: 8802 
+
+Servidor: [Potencia: e5 ;  RSSi: -99 ; LQI: 108 ] 
+
+Pacote UDP enviado: [LED_TOGGLE_REQUEST] de: 
+aaaa::0212:4b00:07c3:b5bb 
+para: aaaa::0212:4b00:07b9:5ecc Porta: 8802 
+
+
+Dados Recebidos: zˇù
+comando inicial: 122
+
+RSSi: -73  LQI: 108 
+ 
+Recebendo LED_SET_STATE de [aaaa::0212:4b00:07b9:5ecc]: 8802
+Pacote UDP enviado... de: 
+aaaa::0212:4b00:07c3:b5bb 
+para: aaaa::0212:4b00:07b9:5ecc Porta: 8802 
+
+Servidor: [Potencia: d5 ;  RSSi: -99 ; LQI: 73 ] 
+
+Pacote UDP enviado: [LED_TOGGLE_REQUEST] de: 
+aaaa::0212:4b00:07c3:b5bb 
+para: aaaa::0212:4b00:07b9:5ecc Porta: 8802 
+
+
+Dados Recebidos: zˇü
+comando inicial: 122
+
+RSSi: -72  LQI: 108 
+ 
+Recebendo LED_SET_STATE de [aaaa::0212:4b00:07b9:5ecc]: 8802
+Pacote UDP enviado... de: 
+aaaa::0212:4b00:07c3:b5bb 
+para: aaaa::0212:4b00:07b9:5ecc Porta: 8802 
+
+Servidor: [Potencia: c5 ;  RSSi: -97 ; LQI: 74 ] 
+
+Pacote UDP enviado: [LED_TOGGLE_REQUEST] de: 
+aaaa::0212:4b00:07c3:b5bb 
+para: aaaa::0212:4b00:07b9:5ecc Porta: 8802 
+
+
+Dados Recebidos: zˇù
+comando inicial: 122
+
+RSSi: -75  LQI: 57 
+ 
+Recebendo LED_SET_STATE de [aaaa::0212:4b00:07b9:5ecc]: 8802
+Pacote UDP enviado... de: 
+aaaa::0212:4b00:07c3:b5bb 
+para: aaaa::0212:4b00:07b9:5ecc Porta: 8802 
+
+Servidor: [Potencia: b5 ;  RSSi: -99 ; LQI: 75 ] 
+
+Pacote UDP enviado: [LED_TOGGLE_REQUEST] de: 
+aaaa::0212:4b00:07c3:b5bb 
+para: aaaa::0212:4b00:07b9:5ecc Porta: 8802 
+
+
+Dados Recebidos: z	ˇù
+comando inicial: 122
+
+RSSi: -77  LQI: 108 
+ 
+Recebendo LED_SET_STATE de [aaaa::0212:4b00:07b9:5ecc]: 8802
+Pacote UDP enviado... de: 
+aaaa::0212:4b00:07c3:b5bb 
+para: aaaa::0212:4b00:07b9:5ecc Porta: 8802 
+
+Servidor: [Potencia: a5 ;  RSSi: -99 ; LQI: 108 ] 
+
+Pacote UDP enviado: [LED_TOGGLE_REQUEST] de: 
+aaaa::0212:4b00:07c3:b5bb 
+para: aaaa::0212:4b00:07b9:5ecc Porta: 8802 
+
+
+Dados Recebidos: z
+ˇú
+comando inicial: 122
+
+RSSi: -71  LQI: 108 
+ 
+Recebendo LED_SET_STATE de [aaaa::0212:4b00:07b9:5ecc]: 8802
+Pacote UDP enviado... de: 
+aaaa::0212:4b00:07c3:b5bb 
+para: aaaa::0212:4b00:07b9:5ecc Porta: 8802 
+
+Servidor: [Potencia: 95 ;  RSSi: -100 ; LQI: 81 ] 
+
+Pacote UDP enviado: [LED_TOGGLE_REQUEST] de: 
+aaaa::0212:4b00:07c3:b5bb 
+para: aaaa::0212:4b00:07b9:5ecc Porta: 8802 
+
+Pacote UDP enviado: [LED_TOGGLE_REQUEST] de: 
+aaaa::0212:4b00:07c3:b5bb 
+para: aaaa::0212:4b00:07b9:5ecc Porta: 8802 
+
+Pacote UDP enviado: [LED_TOGGLE_REQUEST] de: 
+aaaa::0212:4b00:07c3:b5bb 
+para: aaaa::0212:4b00:07b9:5ecc Porta: 8802 
+
+Pacote UDP enviado: [LED_TOGGLE_REQUEST] de: 
+aaaa::0212:4b00:07c3:b5bb 
+para: aaaa::0212:4b00:07b9:5ecc Porta: 8802 
+
+Pacote UDP enviado: [LED_TOGGLE_REQUEST] de: 
+aaaa::0212:4b00:07c3:b5bb 
+para: aaaa::0212:4b00:07b9:5ecc Porta: 8802 
+
+Pacote UDP enviado: [LED_TOGGLE_REQUEST] de: 
+aaaa::0212:4b00:07c3:b5bb 
+para: aaaa::0212:4b00:07b9:5ecc Porta: 8802 
+
+Pacote UDP enviado: [LED_TOGGLE_REQUEST] de: 
+aaaa::0212:4b00:07c3:b5bb 
+para: aaaa::0212:4b00:07b9:5ecc Porta: 8802 
+
+Pacote UDP enviado: [LED_TOGGLE_REQUEST] de: 
+aaaa::0212:4b00:07c3:b5bb 
+para: aaaa::0212:4b00:07b9:5ecc Porta: 8802 
+
+Pacote UDP enviado: [LED_TOGGLE_REQUEST] de: 
+aaaa::0212:4b00:07c3:b5bb 
+para: aaaa::0212:4b00:07b9:5ecc Porta: 8802 
+
+Pacote UDP enviado: [LED_TOGGLE_REQUEST] de: 
+aaaa::0212:4b00:07c3:b5bb 
+para: aaaa::0212:4b00:07b9:5ecc Porta: 8802 
+
+Pacote UDP enviado: [LED_TOGGLE_REQUEST] de: 
+aaaa::0212:4b00:07c3:b5bb 
+para: aaaa::0212:4b00:07b9:5ecc Porta: 8802 
+
+Pacote UDP enviado: [LED_TOGGLE_REQUEST] de: 
+aaaa::0212:4b00:07c3:b5bb 
+para: aaaa::0212:4b00:07b9:5ecc Porta: 8802 
+
+Pacote UDP enviado: [LED_TOGGLE_REQUEST] de: 
+aaaa::0212:4b00:07c3:b5bb 
+para: aaaa::0212:4b00:07b9:5ecc Porta: 8802 
+
+Pacote UDP enviado: [LED_TOGGLE_REQUEST] de: 
+aaaa::0212:4b00:07c3:b5bb 
+para: aaaa::0212:4b00:07b9:5ecc Porta: 8802 
+
+Pacote UDP enviado: [LED_TOGGLE_REQUEST] de: 
+aaaa::0212:4b00:07c3:b5bb 
+para: aaaa::0212:4b00:07b9:5ecc Porta: 8802 
+
+Pacote UDP enviado: [LED_TOGGLE_REQUEST] de: 
+aaaa::0212:4b00:07c3:b5bb 
+para: aaaa::0212:4b00:07b9:5ecc Porta: 8802 
+
+Pacote UDP enviado: [LED_TOGGLE_REQUEST] de: 
+aaaa::0212:4b00:07c3:b5bb 
+para: aaaa::0212:4b00:07b9:5ecc Porta: 8802 
+
+Pacote UDP enviado: [LED_TOGGLE_REQUEST] de: 
+aaaa::0212:4b00:07c3:b5bb 
+para: aaaa::0212:4b00:07b9:5ecc Porta: 8802 
+
+Pacote UDP enviado: [LED_TOGGLE_REQUEST] de: 
+aaaa::0212:4b00:07c3:b5bb 
+para: aaaa::0212:4b00:07b9:5ecc Porta: 8802 
+
+Pacote UDP enviado: [LED_TOGGLE_REQUEST] de: 
+aaaa::0212:4b00:07c3:b5bb 
+para: aaaa::0212:4b00:07b9:5ecc Porta: 8802 
+
+Pacote UDP enviado: [LED_TOGGLE_REQUEST] de: 
+aaaa::0212:4b00:07c3:b5bb 
+para: aaaa::0212:4b00:07b9:5ecc Porta: 8802 
+
+Pacote UDP enviado: [LED_TOGGLE_REQUEST] de: 
+aaaa::0212:4b00:07c3:b5bb 
+para: aaaa::0212:4b00:07b9:5ecc Porta: 8802 
+
+
+Dados Recebidos: z
+ˇú
+comando inicial: 122
+
+RSSi: -72  LQI: 108 
+ 
+Recebendo LED_SET_STATE de [aaaa::0212:4b00:07b9:5ecc]: 8802
+Pacote UDP enviado... de: 
+aaaa::0212:4b00:07c3:b5bb 
+para: aaaa::0212:4b00:07b9:5ecc Porta: 8802 
+
+Servidor: [Potencia: 45 ;  RSSi: -100 ; LQI: 73 ] 
+
+Pacote UDP enviado: [LED_TOGGLE_REQUEST] de: 
+aaaa::0212:4b00:07c3:b5bb 
+para: aaaa::0212:4b00:07b9:5ecc Porta: 8802 
+
+Pacote UDP enviado: [LED_TOGGLE_REQUEST] de: 
+aaaa::0212:4b00:07c3:b5bb 
+para: aaaa::0212:4b00:07b9:5ecc Porta: 8802 
+
+
+Dados Recebidos: zˇù
+comando inicial: 122
+
+RSSi: -73  LQI: 108 
+ 
+Recebendo LED_SET_STATE de [aaaa::0212:4b00:07b9:5ecc]: 8802
+Pacote UDP enviado... de: 
+aaaa::0212:4b00:07c3:b5bb 
+para: aaaa::0212:4b00:07b9:5ecc Porta: 8802 
+
+Servidor: [Potencia: 25 ;  RSSi: -99 ; LQI: 87 ] 
+
+Pacote UDP enviado: [LED_TOGGLE_REQUEST] de: 
+aaaa::0212:4b00:07c3:b5bb 
+para: aaaa::0212:4b00:07b9:5ecc Porta: 8802 
+
+
+Dados Recebidos: zˇû
+comando inicial: 122
+
+RSSi: -73  LQI: 108 
+ 
+Recebendo LED_SET_STATE de [aaaa::0212:4b00:07b9:5ecc]: 8802
+Pacote UDP enviado... de: 
+aaaa::0212:4b00:07c3:b5bb 
+para: aaaa::0212:4b00:07b9:5ecc Porta: 8802 
+
+Servidor: [Potencia: 15 ;  RSSi: -98 ; LQI: 88 ] 
+
+Pacote UDP enviado: [LED_TOGGLE_REQUEST] de: 
+aaaa::0212:4b00:07c3:b5bb 
+para: aaaa::0212:4b00:07b9:5ecc Porta: 8802 
+
+
+Dados Recebidos: zˇû
+comando inicial: 122
+
+RSSi: -73  LQI: 108 
+ 
+Recebendo LED_SET_STATE de [aaaa::0212:4b00:07b9:5ecc]: 8802
+Pacote UDP enviado... de: 
+aaaa::0212:4b00:07c3:b5bb 
+para: aaaa::0212:4b00:07b9:5ecc Porta: 8802 
+
+Servidor: [Potencia: 5 ;  RSSi: -98 ; LQI: 108 ] 
+
+Pacote UDP enviado: [LED_TOGGLE_REQUEST] de: 
+aaaa::0212:4b00:07c3:b5bb 
+para: aaaa::0212:4b00:07b9:5ecc Porta: 8802 
+
+Pacote UDP enviado: [LED_TOGGLE_REQUEST] de: 
+aaaa::0212:4b00:07c3:b5bb 
+para: aaaa::0212:4b00:07b9:5ecc Porta: 8802 
+
+
+Dados Recebidos: z
+comando inicial: 122
+
+RSSi: -75  LQI: 108 
+ 
+Recebendo LED_SET_STATE de [aaaa::0212:4b00:07b9:5ecc]: 8802
+Pacote UDP enviado... de: 
+aaaa::0212:4b00:07c3:b5bb 
+para: aaaa::0212:4b00:07b9:5ecc Porta: 8802 
+
+Servidor: [Potencia: f5 ;  RSSi: -98 ; LQI: 94 ] 
+
+Pacote UDP enviado: [LED_TOGGLE_REQUEST] de: 
+aaaa::0212:4b00:07c3:b5bb 
+para: aaaa::0212:4b00:07b9:5ecc Porta: 8802 
+
+Pacote UDP enviado: [LED_TOGGLE_REQUEST] de: 
+aaaa::0212:4b00:07c3:b5bb 
+para: aaaa::0212:4b00:07b9:5ecc Porta: 8802 
+
+
+Dados Recebidos: zˇû
+comando inicial: 122
+
+RSSi: -78  LQI: 108 
+ 
+Recebendo LED_SET_STATE de [aaaa::0212:4b00:07b9:5ecc]: 8802
+Pacote UDP enviado... de: 
+aaaa::0212:4b00:07c3:b5bb 
+para: aaaa::0212:4b00:07b9:5ecc Porta: 8802 
+
+Servidor: [Potencia: d5 ;  RSSi: -98 ; LQI: 84 ] 
+
+Pacote UDP enviado: [LED_TOGGLE_REQUEST] de: 
+aaaa::0212:4b00:07c3:b5bb 
+para: aaaa::0212:4b00:07b9:5ecc Porta: 8802 
+
+
+Dados Recebidos: zˇü
+comando inicial: 122
+
+RSSi: -75  LQI: 108 
+ 
+Recebendo LED_SET_STATE de [aaaa::0212:4b00:07b9:5ecc]: 8802
+Pacote UDP enviado... de: 
+aaaa::0212:4b00:07c3:b5bb 
+para: aaaa::0212:4b00:07b9:5ecc Porta: 8802 
+
+Servidor: [Potencia: c5 ;  RSSi: -97 ; LQI: 91 ] 
+
+Pacote UDP enviado: [LED_TOGGLE_REQUEST] de: 
+aaaa::0212:4b00:07c3:b5bb 
+para: aaaa::0212:4b00:07b9:5ecc Porta: 8802 
+
+
+Dados Recebidos: zˇ°
+comando inicial: 122
+
+RSSi: -73  LQI: 108 
+ 
+Recebendo LED_SET_STATE de [aaaa::0212:4b00:07b9:5ecc]: 8802
+Pacote UDP enviado... de: 
+aaaa::0212:4b00:07c3:b5bb 
+para: aaaa::0212:4b00:07b9:5ecc Porta: 8802 
+
+Servidor: [Potencia: b5 ;  RSSi: -95 ; LQI: 103 ] 
+
+Pacote UDP enviado: [LED_TOGGLE_REQUEST] de: 
+aaaa::0212:4b00:07c3:b5bb 
+para: aaaa::0212:4b00:07b9:5ecc Porta: 8802 
+
+
+Dados Recebidos: zˇü
+comando inicial: 122
+
+RSSi: -73  LQI: 108 
+ 
+Recebendo LED_SET_STATE de [aaaa::0212:4b00:07b9:5ecc]: 8802
+Pacote UDP enviado... de: 
+aaaa::0212:4b00:07c3:b5bb 
+para: aaaa::0212:4b00:07b9:5ecc Porta: 8802 
+
+Servidor: [Potencia: a5 ;  RSSi: -97 ; LQI: 99 ] 
+
+Pacote UDP enviado: [LED_TOGGLE_REQUEST] de: 
+aaaa::0212:4b00:07c3:b5bb 
+para: aaaa::0212:4b00:07b9:5ecc Porta: 8802 
+
+
+Dados Recebidos: zˇ°
+comando inicial: 122
+
+RSSi: -87  LQI: 106 
+ 
+Recebendo LED_SET_STATE de [aaaa::0212:4b00:07b9:5ecc]: 8802
+Pacote UDP enviado... de: 
+aaaa::0212:4b00:07c3:b5bb 
+para: aaaa::0212:4b00:07b9:5ecc Porta: 8802 
+
+Servidor: [Potencia: 95 ;  RSSi: -95 ; LQI: 106 ] 
+
+Pacote UDP enviado: [LED_TOGGLE_REQUEST] de: 
+aaaa::0212:4b00:07c3:b5bb 
+para: aaaa::0212:4b00:07b9:5ecc Porta: 8802 
+
+
+Dados Recebidos: zˇ†
+comando inicial: 122
+
+RSSi: -75  LQI: 108 
+ 
+Recebendo LED_SET_STATE de [aaaa::0212:4b00:07b9:5ecc]: 8802
+Pacote UDP enviado... de: 
+aaaa::0212:4b00:07c3:b5bb 
+para: aaaa::0212:4b00:07b9:5ecc Porta: 8802 
+
+Servidor: [Potencia: 85 ;  RSSi: -96 ; LQI: 102 ] 
+
+Pacote UDP enviado: [LED_TOGGLE_REQUEST] de: 
+aaaa::0212:4b00:07c3:b5bb 
+para: aaaa::0212:4b00:07b9:5ecc Porta: 8802 
+
+
+Dados Recebidos: zˇû
+comando inicial: 122
+
+RSSi: -77  LQI: 108 
+ 
+Recebendo LED_SET_STATE de [aaaa::0212:4b00:07b9:5ecc]: 8802
+Pacote UDP enviado... de: 
+aaaa::0212:4b00:07c3:b5bb 
+para: aaaa::0212:4b00:07b9:5ecc Porta: 8802 
+
+Servidor: [Potencia: 75 ;  RSSi: -98 ; LQI: 108 ] 
+
+Pacote UDP enviado: [LED_TOGGLE_REQUEST] de: 
+aaaa::0212:4b00:07c3:b5bb 
+para: aaaa::0212:4b00:07b9:5ecc Porta: 8802 
+
+
+Dados Recebidos: zˇ†
+comando inicial: 122
+
+RSSi: -72  LQI: 108 
+ 
+Recebendo LED_SET_STATE de [aaaa::0212:4b00:07b9:5ecc]: 8802
+Pacote UDP enviado... de: 
+aaaa::0212:4b00:07c3:b5bb 
+para: aaaa::0212:4b00:07b9:5ecc Porta: 8802 
+
+Servidor: [Potencia: 65 ;  RSSi: -96 ; LQI: 66 ] 
+
+Pacote UDP enviado: [LED_TOGGLE_REQUEST] de: 
+aaaa::0212:4b00:07c3:b5bb 
+para: aaaa::0212:4b00:07b9:5ecc Porta: 8802 
+
+
+Dados Recebidos: z	ˇü
+comando inicial: 122
+
+RSSi: -77  LQI: 108 
+ 
+Recebendo LED_SET_STATE de [aaaa::0212:4b00:07b9:5ecc]: 8802
+Pacote UDP enviado... de: 
+aaaa::0212:4b00:07c3:b5bb 
+para: aaaa::0212:4b00:07b9:5ecc Porta: 8802 
+
+Servidor: [Potencia: 55 ;  RSSi: -97 ; LQI: 108 ] 
+
+Pacote UDP enviado: [LED_TOGGLE_REQUEST] de: 
+aaaa::0212:4b00:07c3:b5bb 
+para: aaaa::0212:4b00:07b9:5ecc Porta: 8802 
+
+
+Dados Recebidos: z
+ˇ†
+comando inicial: 122
+
+RSSi: -73  LQI: 108 
+ 
+Recebendo LED_SET_STATE de [aaaa::0212:4b00:07b9:5ecc]: 8802
+Pacote UDP enviado... de: 
+aaaa::0212:4b00:07c3:b5bb 
+para: aaaa::0212:4b00:07b9:5ecc Porta: 8802 
+
+Servidor: [Potencia: 45 ;  RSSi: -96 ; LQI: 108 ] 
+
+Pacote UDP enviado: [LED_TOGGLE_REQUEST] de: 
+aaaa::0212:4b00:07c3:b5bb 
+para: aaaa::0212:4b00:07b9:5ecc Porta: 8802 
+
+
+Dados Recebidos: z
+ˇ†
+comando inicial: 122
+
+RSSi: -77  LQI: 108 
+ 
+Recebendo LED_SET_STATE de [aaaa::0212:4b00:07b9:5ecc]: 8802
+Pacote UDP enviado... de: 
+aaaa::0212:4b00:07c3:b5bb 
+para: aaaa::0212:4b00:07b9:5ecc Porta: 8802 
+
+Servidor: [Potencia: 35 ;  RSSi: -96 ; LQI: 65 ] 
+
+Pacote UDP enviado: [LED_TOGGLE_REQUEST] de: 
+aaaa::0212:4b00:07c3:b5bb 
+para: aaaa::0212:4b00:07b9:5ecc Porta: 8802 
+
+Pacote UDP enviado: [LED_TOGGLE_REQUEST] de: 
+aaaa::0212:4b00:07c3:b5bb 
+para: aaaa::0212:4b00:07b9:5ecc Porta: 8802 
+
+Pacote UDP enviado: [LED_TOGGLE_REQUEST] de: 
+aaaa::0212:4b00:07c3:b5bb 
+para: aaaa::0212:4b00:07b9:5ecc Porta: 8802 
+
+Pacote UDP enviado: [LED_TOGGLE_REQUEST] de: 
+aaaa::0212:4b00:07c3:b5bb 
+para: aaaa::0212:4b00:07b9:5ecc Porta: 8802 
+
+Pacote UDP enviado: [LED_TOGGLE_REQUEST] de: 
+aaaa::0212:4b00:07c3:b5bb 
+para: aaaa::0212:4b00:07b9:5ecc Porta: 8802 
+
+Pacote UDP enviado: [LED_TOGGLE_REQUEST] de: 
+aaaa::0212:4b00:07c3:b5bb 
+para: aaaa::0212:4b00:07b9:5ecc Porta: 8802 
+
+Pacote UDP enviado: [LED_TOGGLE_REQUEST] de: 
+aaaa::0212:4b00:07c3:b5bb 
+para: aaaa::0212:4b00:07b9:5ecc Porta: 8802 
+
+Pacote UDP enviado: [LED_TOGGLE_REQUEST] de: 
+aaaa::0212:4b00:07c3:b5bb 
+para: aaaa::0212:4b00:07b9:5ecc Porta: 8802 
+
+Pacote UDP enviado: [LED_TOGGLE_REQUEST] de: 
+aaaa::0212:4b00:07c3:b5bb 
+para: aaaa::0212:4b00:07b9:5ecc Porta: 8802 
+
+Pacote UDP enviado: [LED_TOGGLE_REQUEST] de: 
+aaaa::0212:4b00:07c3:b5bb 
+para: aaaa::0212:4b00:07b9:5ecc Porta: 8802 
+
+Pacote UDP enviado: [LED_TOGGLE_REQUEST] de: 
+aaaa::0212:4b00:07c3:b5bb 
+para: aaaa::0212:4b00:07b9:5ecc Porta: 8802 
+
+Pacote UDP enviado: [LED_TOGGLE_REQUEST] de: 
+aaaa::0212:4b00:07c3:b5bb 
+para: aaaa::0212:4b00:07b9:5ecc Porta: 8802 
+
+
+Dados Recebidos: z
+ˇû
+comando inicial: 122
+
+RSSi: -85  LQI: 108 
+ 
+Recebendo LED_SET_STATE de [aaaa::0212:4b00:07b9:5ecc]: 8802
+Pacote UDP enviado... de: 
+aaaa::0212:4b00:07c3:b5bb 
+para: aaaa::0212:4b00:07b9:5ecc Porta: 8802 
+
+Servidor: [Potencia: 85 ;  RSSi: -98 ; LQI: 107 ] 
+
+Pacote UDP enviado: [LED_TOGGLE_REQUEST] de: 
+aaaa::0212:4b00:07c3:b5bb 
+para: aaaa::0212:4b00:07b9:5ecc Porta: 8802 
+
+
+Dados Recebidos: zˇ°
+comando inicial: 122
+
+RSSi: -88  LQI: 107 
+ 
+Recebendo LED_SET_STATE de [aaaa::0212:4b00:07b9:5ecc]: 8802
+Pacote UDP enviado... de: 
+aaaa::0212:4b00:07c3:b5bb 
+para: aaaa::0212:4b00:07b9:5ecc Porta: 8802 
+
+Servidor: [Potencia: 75 ;  RSSi: -95 ; LQI: 53 ] 
+
+Pacote UDP enviado: [LED_TOGGLE_REQUEST] de: 
+aaaa::0212:4b00:07c3:b5bb 
+para: aaaa::0212:4b00:07b9:5ecc Porta: 8802 
+
+
+Dados Recebidos: zˇü
+comando inicial: 122
+
+RSSi: -78  LQI: 108 
+ 
+Recebendo LED_SET_STATE de [aaaa::0212:4b00:07b9:5ecc]: 8802
+Pacote UDP enviado... de: 
+aaaa::0212:4b00:07c3:b5bb 
+para: aaaa::0212:4b00:07b9:5ecc Porta: 8802 
+
+Servidor: [Potencia: 65 ;  RSSi: -97 ; LQI: 108 ] 
+
+Pacote UDP enviado: [LED_TOGGLE_REQUEST] de: 
+aaaa::0212:4b00:07c3:b5bb 
+para: aaaa::0212:4b00:07b9:5ecc Porta: 8802 
+
+Pacote UDP enviado: [LED_TOGGLE_REQUEST] de: 
+aaaa::0212:4b00:07c3:b5bb 
+para: aaaa::0212:4b00:07b9:5ecc Porta: 8802 
+
+
+Dados Recebidos: z
+comando inicial: 122
+
+RSSi: -85  LQI: 108 
+ 
+Recebendo LED_SET_STATE de [aaaa::0212:4b00:07b9:5ecc]: 8802
+Pacote UDP enviado... de: 
+aaaa::0212:4b00:07c3:b5bb 
+para: aaaa::0212:4b00:07b9:5ecc Porta: 8802 
+
+Servidor: [Potencia: 45 ;  RSSi: -97 ; LQI: 93 ] 
+
+Pacote UDP enviado: [LED_TOGGLE_REQUEST] de: 
+aaaa::0212:4b00:07c3:b5bb 
+para: aaaa::0212:4b00:07b9:5ecc Porta: 8802 
+
+
+Dados Recebidos: zˇû
+comando inicial: 122
+
+RSSi: -85  LQI: 103 
+ 
+Recebendo LED_SET_STATE de [aaaa::0212:4b00:07b9:5ecc]: 8802
+Pacote UDP enviado... de: 
+aaaa::0212:4b00:07c3:b5bb 
+para: aaaa::0212:4b00:07b9:5ecc Porta: 8802 
+
+Servidor: [Potencia: 35 ;  RSSi: -98 ; LQI: 108 ] 
+
+Pacote UDP enviado: [LED_TOGGLE_REQUEST] de: 
+aaaa::0212:4b00:07c3:b5bb 
+para: aaaa::0212:4b00:07b9:5ecc Porta: 8802 
+
+
+Dados Recebidos: zˇù
+comando inicial: 122
+
+RSSi: -85  LQI: 108 
+ 
+Recebendo LED_SET_STATE de [aaaa::0212:4b00:07b9:5ecc]: 8802
+Pacote UDP enviado... de: 
+aaaa::0212:4b00:07c3:b5bb 
+para: aaaa::0212:4b00:07b9:5ecc Porta: 8802 
+
+Servidor: [Potencia: 25 ;  RSSi: -99 ; LQI: 108 ] 
+
+Pacote UDP enviado: [LED_TOGGLE_REQUEST] de: 
+aaaa::0212:4b00:07c3:b5bb 
+para: aaaa::0212:4b00:07b9:5ecc Porta: 8802 
+
+
+Dados Recebidos: zˇû
+comando inicial: 122
+
+RSSi: -82  LQI: 108 
+ 
+Recebendo LED_SET_STATE de [aaaa::0212:4b00:07b9:5ecc]: 8802
+Pacote UDP enviado... de: 
+aaaa::0212:4b00:07c3:b5bb 
+para: aaaa::0212:4b00:07b9:5ecc Porta: 8802 
+
+Servidor: [Potencia: 15 ;  RSSi: -98 ; LQI: 108 ] 
+
+Pacote UDP enviado: [LED_TOGGLE_REQUEST] de: 
+aaaa::0212:4b00:07c3:b5bb 
+para: aaaa::0212:4b00:07b9:5ecc Porta: 8802 
+
+
+Dados Recebidos: zˇú
+comando inicial: 122
+
+RSSi: -83  LQI: 108 
+ 
+Recebendo LED_SET_STATE de [aaaa::0212:4b00:07b9:5ecc]: 8802
+Pacote UDP enviado... de: 
+aaaa::0212:4b00:07c3:b5bb 
+para: aaaa::0212:4b00:07b9:5ecc Porta: 8802 
+
+Servidor: [Potencia: 5 ;  RSSi: -100 ; LQI: 72 ] 
+
+Pacote UDP enviado: [LED_TOGGLE_REQUEST] de: 
+aaaa::0212:4b00:07c3:b5bb 
+para: aaaa::0212:4b00:07b9:5ecc Porta: 8802 
+
+Pacote UDP enviado: [LED_TOGGLE_REQUEST] de: 
+aaaa::0212:4b00:07c3:b5bb 
+para: aaaa::0212:4b00:07b9:5ecc Porta: 8802 
+
+Pacote UDP enviado: [LED_TOGGLE_REQUEST] de: 
+aaaa::0212:4b00:07c3:b5bb 
+para: aaaa::0212:4b00:07b9:5ecc Porta: 8802 
+
+
+Dados Recebidos: zˇ†
+comando inicial: 122
+
+RSSi: -78  LQI: 108 
+ 
+Recebendo LED_SET_STATE de [aaaa::0212:4b00:07b9:5ecc]: 8802
+Pacote UDP enviado... de: 
+aaaa::0212:4b00:07c3:b5bb 
+para: aaaa::0212:4b00:07b9:5ecc Porta: 8802 
+
+Servidor: [Potencia: e5 ;  RSSi: -96 ; LQI: 83 ] 
+
+Pacote UDP enviado: [LED_TOGGLE_REQUEST] de: 
+aaaa::0212:4b00:07c3:b5bb 
+para: aaaa::0212:4b00:07b9:5ecc Porta: 8802 
+
+
+Dados Recebidos: zˇü
+comando inicial: 122
+
+RSSi: -79  LQI: 108 
+ 
+Recebendo LED_SET_STATE de [aaaa::0212:4b00:07b9:5ecc]: 8802
+Pacote UDP enviado... de: 
+aaaa::0212:4b00:07c3:b5bb 
+para: aaaa::0212:4b00:07b9:5ecc Porta: 8802 
+
+Servidor: [Potencia: d5 ;  RSSi: -97 ; LQI: 106 ] 
+
+Pacote UDP enviado: [LED_TOGGLE_REQUEST] de: 
+aaaa::0212:4b00:07c3:b5bb 
+para: aaaa::0212:4b00:07b9:5ecc Porta: 8802 
+
+
+Dados Recebidos: zˇ†
+comando inicial: 122
+
+RSSi: -75  LQI: 108 
+ 
+Recebendo LED_SET_STATE de [aaaa::0212:4b00:07b9:5ecc]: 8802
+Pacote UDP enviado... de: 
+aaaa::0212:4b00:07c3:b5bb 
+para: aaaa::0212:4b00:07b9:5ecc Porta: 8802 
+
+Servidor: [Potencia: c5 ;  RSSi: -96 ; LQI: 95 ] 
+
+Pacote UDP enviado: [LED_TOGGLE_REQUEST] de: 
+aaaa::0212:4b00:07c3:b5bb 
+para: aaaa::0212:4b00:07b9:5ecc Porta: 8802 
+
+
+Dados Recebidos: z
+ˇ¢
+comando inicial: 122
+
+RSSi: -75  LQI: 108 
+ 
+Recebendo LED_SET_STATE de [aaaa::0212:4b00:07b9:5ecc]: 8802
+Pacote UDP enviado... de: 
+aaaa::0212:4b00:07c3:b5bb 
+para: aaaa::0212:4b00:07b9:5ecc Porta: 8802 
+
+Servidor: [Potencia: b5 ;  RSSi: -94 ; LQI: 95 ] 
+
+Pacote UDP enviado: [LED_TOGGLE_REQUEST] de: 
+aaaa::0212:4b00:07c3:b5bb 
+para: aaaa::0212:4b00:07b9:5ecc Porta: 8802 
+
+
+Dados Recebidos: z
+ˇ°
+comando inicial: 122
+
+RSSi: -76  LQI: 107 
+ 
+Recebendo LED_SET_STATE de [aaaa::0212:4b00:07b9:5ecc]: 8802
+Pacote UDP enviado... de: 
+aaaa::0212:4b00:07c3:b5bb 
+para: aaaa::0212:4b00:07b9:5ecc Porta: 8802 
+
+Servidor: [Potencia: a5 ;  RSSi: -95 ; LQI: 102 ] 
+
+Pacote UDP enviado: [LED_TOGGLE_REQUEST] de: 
+aaaa::0212:4b00:07c3:b5bb 
+para: aaaa::0212:4b00:07b9:5ecc Porta: 8802 
+
+
+Dados Recebidos: zˇ°
+comando inicial: 122
+
+RSSi: -76  LQI: 108 
+ 
+Recebendo LED_SET_STATE de [aaaa::0212:4b00:07b9:5ecc]: 8802
+Pacote UDP enviado... de: 
+aaaa::0212:4b00:07c3:b5bb 
+para: aaaa::0212:4b00:07b9:5ecc Porta: 8802 
+
+Servidor: [Potencia: 95 ;  RSSi: -95 ; LQI: 108 ] 
+
+Pacote UDP enviado: [LED_TOGGLE_REQUEST] de: 
+aaaa::0212:4b00:07c3:b5bb 
+para: aaaa::0212:4b00:07b9:5ecc Porta: 8802 
+
+
+Dados Recebidos: zˇ†
+comando inicial: 122
+
+RSSi: -77  LQI: 108 
+ 
+Recebendo LED_SET_STATE de [aaaa::0212:4b00:07b9:5ecc]: 8802
+Pacote UDP enviado... de: 
+aaaa::0212:4b00:07c3:b5bb 
+para: aaaa::0212:4b00:07b9:5ecc Porta: 8802 
+
+Servidor: [Potencia: 85 ;  RSSi: -96 ; LQI: 108 ] 
+
+Pacote UDP enviado: [LED_TOGGLE_REQUEST] de: 
+aaaa::0212:4b00:07c3:b5bb 
+para: aaaa::0212:4b00:07b9:5ecc Porta: 8802 
+
+
+Dados Recebidos: z
+comando inicial: 122
+
+RSSi: -75  LQI: 108 
+ 
+Recebendo LED_SET_STATE de [aaaa::0212:4b00:07b9:5ecc]: 8802
+Pacote UDP enviado... de: 
+aaaa::0212:4b00:07c3:b5bb 
+para: aaaa::0212:4b00:07b9:5ecc Porta: 8802 
+
+Servidor: [Potencia: 75 ;  RSSi: -95 ; LQI: 104 ] 
+
+Pacote UDP enviado: [LED_TOGGLE_REQUEST] de: 
+aaaa::0212:4b00:07c3:b5bb 
+para: aaaa::0212:4b00:07b9:5ecc Porta: 8802 
+
+
+Dados Recebidos: zˇ†
+comando inicial: 122
+
+RSSi: -75  LQI: 108 
+ 
+Recebendo LED_SET_STATE de [aaaa::0212:4b00:07b9:5ecc]: 8802
+Pacote UDP enviado... de: 
+aaaa::0212:4b00:07c3:b5bb 
+para: aaaa::0212:4b00:07b9:5ecc Porta: 8802 
+
+Servidor: [Potencia: 65 ;  RSSi: -96 ; LQI: 105 ] 
+
+Pacote UDP enviado: [LED_TOGGLE_REQUEST] de: 
+aaaa::0212:4b00:07c3:b5bb 
+para: aaaa::0212:4b00:07b9:5ecc Porta: 8802 
+
+
+Dados Recebidos: zˇ¢
+comando inicial: 122
+
+RSSi: -77  LQI: 108 
+ 
+Recebendo LED_SET_STATE de [aaaa::0212:4b00:07b9:5ecc]: 8802
+Pacote UDP enviado... de: 
+aaaa::0212:4b00:07c3:b5bb 
+para: aaaa::0212:4b00:07b9:5ecc Porta: 8802 
+
+Servidor: [Potencia: 55 ;  RSSi: -94 ; LQI: 108 ] 
+
+Pacote UDP enviado: [LED_TOGGLE_REQUEST] de: 
+aaaa::0212:4b00:07c3:b5bb 
+para: aaaa::0212:4b00:07b9:5ecc Porta: 8802 
+
+
+Dados Recebidos: zˇ†
+comando inicial: 122
+
+RSSi: -74  LQI: 108 
+ 
+Recebendo LED_SET_STATE de [aaaa::0212:4b00:07b9:5ecc]: 8802
+Pacote UDP enviado... de: 
+aaaa::0212:4b00:07c3:b5bb 
+para: aaaa::0212:4b00:07b9:5ecc Porta: 8802 
+
+Servidor: [Potencia: 45 ;  RSSi: -96 ; LQI: 108 ] 
+
+Pacote UDP enviado: [LED_TOGGLE_REQUEST] de: 
+aaaa::0212:4b00:07c3:b5bb 
+para: aaaa::0212:4b00:07b9:5ecc Porta: 8802 
+
+Pacote UDP enviado: [LED_TOGGLE_REQUEST] de: 
+aaaa::0212:4b00:07c3:b5bb 
+para: aaaa::0212:4b00:07b9:5ecc Porta: 8802 
+
+
+Dados Recebidos: zˇù
+comando inicial: 122
+
+RSSi: -81  LQI: 108 
+ 
+Recebendo LED_SET_STATE de [aaaa::0212:4b00:07b9:5ecc]: 8802
+Pacote UDP enviado... de: 
+aaaa::0212:4b00:07c3:b5bb 
+para: aaaa::0212:4b00:07b9:5ecc Porta: 8802 
+
+Servidor: [Potencia: 25 ;  RSSi: -99 ; LQI: 80 ] 

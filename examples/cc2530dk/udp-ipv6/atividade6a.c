@@ -80,8 +80,8 @@ static void tcpip_handler ( void )
 {
 	char i=0;
 
-	uint16_t rssiServidor[2];
-	uint16_t lqiServidor[2];
+	uint16_t rssiServidor;
+	uint16_t lqiServidor;
 
 	if( uip_newdata ()) // verifica se novos dados foram recebidos
 	{
@@ -113,16 +113,16 @@ static void tcpip_handler ( void )
 
 			 PRINTF ("\nPacote UDP enviado... de: \n");
 			 PRINT6ADDR(&uip_ds6_if.addr_list[1].ipaddr);
-			 PRINTF(" \npara: \n ");
-			 PRINT6ADDR(&g_conn->ripaddr); PRINTF(" e ");PRINT6ADDR(&meuServer->ripaddr);
-			 PRINTF(" Porta: %u", UIP_HTONS(g_conn->rport));
+			 PRINTF(" \npara: ");
+			 PRINT6ADDR(&meuServer->ripaddr);
+			 PRINTF(" Porta: %u \n", UIP_HTONS(g_conn->rport));
 
-			rssiServidor[0] = dados[2];
-			rssiServidor[1] = dados[3];
-			lqiServidor[0] = dados[4];
-			lqiServidor[1] = dados[5];
+			//rssiServidor = (dados && 0x0000FFFF0000) << 16;
+			 rssiServidor = (dados && 0x0000FFFF0000) << 16;
+			//lqiServidor = (dados && 0x00000000FFFF);
 
-			PRINTF("\n Servidor: [RSSi: %i  LQI: %i ] \n", rssiServidor, lqiServidor);
+
+			PRINTF("\n Servidor: [RSSi: %d  LQI: %d ] \n", rssiServidor, lqiServidor);
 
 			break ;
 		}
@@ -164,16 +164,10 @@ static void timeout_handler(void)
 
 	  PRINTF ("\nPacote UDP enviado: [LED_TOGGLE_REQUEST] de: \n");
 	  PRINT6ADDR(&uip_ds6_if.addr_list[1].ipaddr);
-	  PRINTF(" \npara: \n ");
-	  PRINT6ADDR(&g_conn->ripaddr); PRINTF(" e ");PRINT6ADDR(&meuServer->ripaddr);
+	  PRINTF(" \npara: ");
+	  PRINT6ADDR(&meuServer->ripaddr);
 
-	  PRINTF(" Porta: %u", UIP_HTONS(g_conn->rport));
-
-
-	  rssi = (int16_t)packetbuf_attr(PACKETBUF_ATTR_RSSI);
-	  lqi = (int16_t)packetbuf_attr( PACKETBUF_ATTR_LINK_QUALITY);
-
-	  PRINTF("\nRSSi: %i  LQI: %i \n", rssi, lqi);
+	  PRINTF(" Porta: %u \n", UIP_HTONS(g_conn->rport));
 
 
   }
@@ -211,7 +205,7 @@ PROCESS_THREAD(udp_client_process, ev, data)
   uip_ip6addr(&ipServer, 0xbbbb, 0, 0, 0, 0x0212, 0x4B00, 0x07B9, 0x5ECC); //servidor do professor
 
 
-  uip_ip6addr(&ipaddr  , 0xfe80, 0, 0, 0, 0, 0x19b1, 0x21a0, 0xdd76); //local teste
+  //uip_ip6addr(&ipaddr  , 0xfe80, 0, 0, 0, 0, 0x19b1, 0x21a0, 0xdd76); //local teste
 
   PROCESS_BEGIN();
   PRINTF("UDP client process started\n");
@@ -232,8 +226,8 @@ PROCESS_THREAD(udp_client_process, ev, data)
 
   //Endereco de Destino:
   //bbbb::2c72:b227:8a13:1be7 //bbbb::2838:3518:53c8:a77c
-  uip_ip6addr(&ipaddr, 0xbbbb, 0, 0, 0, 0x2838, 0x3518, 0x53c8, 0xa77c); //PC da aula
-  // endereço antigo: uip_ip6addr(&ipaddr, 0xaaaa, 0, 0, 0, 0x0212, 0x4b00, 0x07B9, 0x5ECC);
+  //uip_ip6addr(&ipaddr, 0xbbbb, 0, 0, 0, 0x2838, 0x3518, 0x53c8, 0xa77c); //PC da aula
+  uip_ip6addr(&ipaddr, 0xaaaa, 0, 0, 0, 0x0212, 0x4b00, 0x07B9, 0x5ECC);
 
   g_conn = udp_new(&ipaddr, UIP_HTONS(GLOBAL_CONN_PORT), NULL);
 
