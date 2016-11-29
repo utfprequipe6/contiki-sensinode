@@ -189,7 +189,7 @@
 #define NETSTACK_CONF_RADIO   cc2530_rf_driver
 
 /* RF Config */
-#define IEEE802154_CONF_PANID 0x5449 /* TI */
+#define IEEE802154_CONF_PANID  0xABCD //0x5449 /* TI */
 
 #ifndef CC2530_RF_CONF_CHANNEL
 #define CC2530_RF_CONF_CHANNEL    25
@@ -244,6 +244,8 @@
 #define UIP_CONF_BUFFER_SIZE               240
 #define UIP_CONF_IPV6_QUEUE_PKT              0
 #define UIP_CONF_IPV6_CHECKS                 1
+
+
 #define UIP_CONF_IPV6_REASSEMBLY             0
 
 /* 6lowpan */

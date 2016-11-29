@@ -61,6 +61,11 @@ static struct uip_udp_conn *g_conn;
 #define LED_GET_STATE (0x7B)
 #define LED_STATE (0x7C)
 
+int16_t *rssi;
+int16_t *lqi;
+int16_t rssi1;
+int16_t lqi1;
+
 /*---------------------------------------------------------------------------*/
 PROCESS(udp_client_process, "UDP client process");
 #if BUTTON_SENSOR_ON
@@ -81,17 +86,7 @@ static void tcpip_handler ( void )
 
 		switch (dados[0])
 		{
-		/*case SEND_ECHO :
-		{
-			uip_ipaddr_copy (& g_conn -> ripaddr , & UIP_IP_BUF -> srcipaddr );
-			g_conn -> rport = UIP_UDP_BUF -> destport ;
-			uip_udp_packet_send (g_conn , dados , uip_datalen ());
 
-			PRINTF(" Enviando eco para [");
-			PRINT6ADDR (& g_conn -> ripaddr );
-			PRINTF("]:% u\n", UIP_HTONS (g_conn -> rport ));
-			break ;
-		}*/
 		case LED_SET_STATE :
 		{
 			leds_off(LEDS_ALL);
@@ -99,11 +94,27 @@ static void tcpip_handler ( void )
 
 			PRINTF(" \nRecebendo LED_SET_STATE de [");
 			PRINT6ADDR (& g_conn -> ripaddr );
-			PRINTF("]:% u", UIP_HTONS (g_conn -> rport ));
+			PRINTF("]");
+			//PRINTF("]:% u", UIP_HTONS (g_conn -> rport ));
+
+			rssi[0] = dados[2];
+			rssi[1] = dados[3];
+
+			lqi[0] = dados[4];
+			lqi[1] = dados[5];
+
+			PRINTF("\nrssi do LED_TOOGLE_REQUEST: %i    ", rssi);
+			PRINTF("lqi do LED_TOOGLE_REQUEST: %i", lqi);
+
+			rssi1 = ( int16_t ) packetbuf_attr(PACKETBUF_ATTR_RSSI);
+			lqi1 = ( int16_t ) packetbuf_attr(PACKETBUF_ATTR_LINK_QUALITY );
+			PRINTF("\nrssi do LED_SET_STATE: %i    ", rssi1);
+			PRINTF("lqi do LED_SET_STATE: %i", lqi1);
+
 			buf[0]= LED_STATE;
 			buf[1]= leds_get();
 
-			uip_udp_packet_send( g_conn , buf, 2);//enviando stado dos leds para o servidor
+			uip_udp_packet_send( g_conn , buf, 2);//enviando estado dos leds para o servidor
 
 			break ;
 		}
@@ -128,15 +139,15 @@ timeout_handler(void)
 {  
   memset(buf, 0, MAX_PAYLOAD_LEN); //zera o buffer global
 
- // memcpy(buf, LED_TOGGLE_REQUEST,1);
   buf[0] = LED_TOGGLE_REQUEST;
-  //uip_udp_packet_send(g_conn, buf, MAX_PAYLOAD_LEN);
+
   if ( uip_ds6_get_global( ADDR_PREFERRED) == NULL)
   {
 	  PRINTF ("O No ainda nao tem um IP global valido \n");
   }
   else
   {
+	  //uint8_t  cc2530_rf_power_set(uint8_t new_power)
 	  uip_udp_packet_send( g_conn , buf , 1);
   }
   PRINTF("\nCliente para [");
@@ -170,8 +181,8 @@ PROCESS_THREAD(udp_client_process, ev, data)
 
   PROCESS_BEGIN();
   PRINTF("UDP client process started\n");
-  //bbbb::9dab:6616:c27:995e
   //uip_ip6addr(&ipaddr, 0xfe80, 0, 0, 0, 0x0212, 0x4b00, 0x07c3, 0xb5e4);
+  uip_ip6addr(&ipaddr, 0xaaaa, 0, 0, 0, 0x0212, 0x4b00, 0x07B9, 0x5ECC);
   /* new connection with remote host */
   l_conn = udp_new(&ipaddr, UIP_HTONS(LOCAL_CONN_PORT), NULL);
   if(!l_conn) {
@@ -184,8 +195,8 @@ PROCESS_THREAD(udp_client_process, ev, data)
   PRINTF(" local/remote port %u/%u\n",
          UIP_HTONS(l_conn->lport), UIP_HTONS(l_conn->rport));
 
-  //uip_ip6addr(&ipaddr, 0xaaaa, 0, 0, 0, 0x0212, 0x4b00, 0x07B9, 0x5ECC);
-  uip_ip6addr(&ipaddr, 0xbbbb, 0, 0, 0, 0x9dab, 0x6616, 0x0c27, 0x995e);
+  uip_ip6addr(&ipaddr, 0xaaaa, 0, 0, 0, 0x0212, 0x4b00, 0x07B9, 0x5ECC);
+
   g_conn = udp_new(&ipaddr, UIP_HTONS(GLOBAL_CONN_PORT), NULL);
   if(!g_conn) {
     PRINTF("udp_new g_conn error.\n");
